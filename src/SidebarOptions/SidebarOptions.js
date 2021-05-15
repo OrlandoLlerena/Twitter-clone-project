@@ -1,4 +1,5 @@
 import React from "react";
+import "./sidebarOptions.scss";
 
 function SidebarOptions({ text, Icon }) {
   return (
