@@ -19,26 +19,24 @@ function Post({
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://picsum.photos/200" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              This Guy{" "}
+              {displayName}{" "}
               <span className="post__headerSpecial">
-                <VerifiedUserIcon className="post__badge" /> @hulksmash
+                {verified && <VerifiedUserIcon className="post__badge" />} @
+                {username}
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>I'm building my twitter webpage and adding to my profolio</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          src="https://media.giphy.com/media/PmGJCIL6mImz0LHoAH/giphy.gif"
-          alt="victory"
-        />
+        <img src={image} alt="" />
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
