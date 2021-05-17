@@ -8,15 +8,15 @@ function Feed() {
     <div className="feed">
       <div className="feed__header">
         <h2>Home</h2>
-        {/* Tweet box */}
-        <TweetBox />
-
-        {/* post */}
+      </div>
+      <TweetBox />
+      <div>
         <Post />
-
-        {/* post */}
-        {/* post */}
-        {/* post */}
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
       </div>
     </div>
   );

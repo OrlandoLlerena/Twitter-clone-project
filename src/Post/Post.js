@@ -19,14 +19,14 @@ function Post({
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://pbs.twimg.com/profile_images/1222657003350319106/f7QwpKjF_400x400.jpg" />
+        <Avatar src="https://picsum.photos/200" />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
               This Guy{" "}
-              <span>
+              <span className="post__headerSpecial">
                 <VerifiedUserIcon className="post__badge" /> @hulksmash
               </span>
             </h3>
